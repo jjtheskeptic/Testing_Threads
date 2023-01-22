@@ -118,7 +118,7 @@ while True: #for f in camera.capture_continuous(rawCapture, format="bgr", use_vi
 		servoTriggered=False
 		while  ((datetime.datetime.now()-captureStartTime).seconds < conf["video_recording_seconds"]) :
 			textOutputPixelY=10
-			frame_raw=vs.read() 
+			frame_raw=vs.read()
 			for aCounter in range(8):	#print the objects detected to the frame											
 				detectionText="aCounter:{0}".format(aCounter)
 				cv2.putText(frame_raw, "{}".format(detectionText), (10,textOutputPixelY),

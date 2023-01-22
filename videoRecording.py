@@ -15,8 +15,6 @@ import cv2
 import os
 
 
-
-
 # filter warnings, load the configuration
 warnings.filterwarnings("ignore")
 dir_path=os.path.dirname(os.path.realpath(__file__))
